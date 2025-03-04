@@ -1,0 +1,130 @@
+.main_stadistic_page {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.792);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.stadistic_page {
+    font-family: "Hammersmith One", serif;
+    font-weight: 100;
+    background-color: #0D072A;
+    border-radius: 15px;
+    width: 70%;
+    height: 70%;
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #58D60C;
+
+}
+
+.modal_close {
+    position: absolute;
+    z-index: 1000;
+    right: 42px;
+    top: 85px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+}
+
+.modal_close:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.charts_container {
+    width: 100%;
+    height: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px
+}
+
+.charts {
+    width: 100%;
+    height: 35%;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.titleChar {
+    font-weight: 100;
+    width: 50%;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .stadistic_page {
+        width: 60%;
+        height: 65%;
+    }
+
+    .modal_close {
+        right: 158px;
+        top: 185px;
+    }
+
+    .charts_container {
+        width: 90%;
+        gap: 35px
+    }
+
+    .titleChar {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .stadistic_page {
+        width: 70%;
+        height: 65%;
+    }
+
+    .modal_close {
+        right: 168px;
+        top: 85px;
+    }
+
+    .charts_container {
+        height: auto;
+        gap: 29px;
+        flex-direction: row;
+    }
+
+    .charts {
+        width: 30%;
+        height: max-content;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .titleChar {
+        width: 90%;
+        font-size: 16px;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+
+.card {
+    padding: 15px;
+    border: 2px solid #52E529;
+    background: #00000073;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+    transition: all 0.2s ease;
+    width: 80%;
+
+}
+
+.card:hover {
+    transform: scale(1.);
+    -webkit-transform: scale(1.1);
+    box-shadow: 0px 0px 14px 1px #61C725;
+
+}
+
+.card:hover div {
+    filter: blur(3px);
+    opacity: 0.6;
+}
+
+.card::after {
+    content: "More Info";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.card:hover::after {
+    opacity: 1;
+}
+
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.idCharacter {
+    position: absolute;
+    background-color: rgba(23, 11, 73, 0.8);
+    padding: 2px 10px;
+    margin-top: -1.6em;
+    border-radius: 0 10px 0 10px;
+}
+
+.data-card>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nameCharacter {
+    font-size: 100%;
+    margin: 0;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.specieCharacter {
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #58D60C;
+}
