@@ -41,6 +41,7 @@ export function detailPage(navigateTo: (path: string) => void, character?: Chara
   mainPageDetail.addEventListener("click", (event) => {
     const target = event.target as HTMLElement | null;
     if (target && !target.closest(".detail_page")) {
+      navigateTo("")
       mainPageDetail.remove();
     }
   });
@@ -60,6 +61,7 @@ export function detailPage(navigateTo: (path: string) => void, character?: Chara
   const buttonClose: HTMLElement | null = mainPageDetail.querySelector(".close_button");
   buttonClose?.addEventListener("click", (event) => { 
     event.stopPropagation();  
+    navigateTo("");
     mainPageDetail.remove();
   });
   return mainPageDetail
