@@ -94,8 +94,6 @@ export function homePage(navigateTo: (path: string) => void): HTMLElement {
   const searchButton: HTMLElement | null = mainPage.querySelector(".button_search");
 
   if (mainPage ) {
-    
-
     function updateData() {
       const filters = {
         status: selectStatus?.value || "All",

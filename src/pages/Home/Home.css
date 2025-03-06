@@ -42,7 +42,7 @@ header {
 }
 
 .menuOfFilters {
-    background: rgba(0, 0, 0, 0.51);
+    background: #0F0632;
     color: white;
     place-content: center;
     align-items: center;
@@ -52,9 +52,15 @@ header {
     gap: 8px;
     /* position: fixed;
     z-index: 1000;
-    transition: all 0.3s ease; */
+    transition: all 0.3s 
+    
+    ease; */
     padding: 15px 0;
 
+
+    z-index: 1000;
+    position: sticky; /* Fija el menú cuando se hace scroll */
+    top: 0; 
 }
 
 
