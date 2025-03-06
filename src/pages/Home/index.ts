@@ -4,6 +4,9 @@ import data from "./../../data/rickandmorty/rickandmorty"
 import { Card } from './components/Card';
 import { filterCharacters, populateSelect, renderFilters, searchCharacter } from '../../functions';
 import { stadisticPage } from '../Stadistic';
+import logo from "../../assets/images/logo.png"
+import analytic from "../../assets/images/analitica.png"
+import search from "../../assets/images/search.png"
 
 export function homePage(navigateTo: (path: string) => void): HTMLElement {
   let arrayData: rickAndMortyResponse = data;
@@ -12,11 +15,11 @@ export function homePage(navigateTo: (path: string) => void): HTMLElement {
   mainPage.innerHTML = `
   <header>     
     <div class="header_logo">
-      <img class="logo" src="./src/assets/images/logo.png">
+      <img class="logo" src="${logo}">
     </div> 
 
     <button class="stadistics">
-      <img href="#" src="./src/assets/images/analitica.png" alt="menu" width="100%"/>
+      <img href="#" src="${analytic}" alt="menu" width="100%"/>
     </button>  
   </header>
   
@@ -64,7 +67,7 @@ export function homePage(navigateTo: (path: string) => void): HTMLElement {
   
     <div class="container_filter_2">
       <div class="search_input_cont">
-        <img href="#" src="./src/assets/images/search.png" class="search_img"/>
+        <img href="#" src="${search}" class="search_img"/>
         <input type="search" class="input_search" placeholder="Enter the character's name" />
       </div>
       <button class="button_search">Search</button>
